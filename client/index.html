@@ -59,19 +59,9 @@
         </tfoot>
     </table>
     <script src="js/app/models/Negociacao.js"></script>
-
+    <script src="js/app/controller/NegociacaoController.js"></script>
     <script>
-            var n1 = new Negociacao(new Date, 5, 700);    
-            
-            console.log(n1.data);
-
-            var amanha = new Date();
-            amanha.setDate(11);
-            n1.data = amanha;
-
-            n1.data.setDate(11);
-
-            console.log(n1.data);
+        let negociacaoController = new NegociacaoController();
     </script>
 </body>
 </html>
