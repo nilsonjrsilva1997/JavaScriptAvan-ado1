@@ -16,5 +16,19 @@ class NegociacaoController {
             .split('-')
             .map((item, indice) => item - indice % 2)
         );
+
+        let negociacao = new Negociacao(
+            data,
+            this._inputQuantidade,
+            this._inputValor
+        );
+
+        let diaMesAno = negociacao.data.getDate() + 
+                        '/' + (negociacao.data.getMonth() + 1) +
+                        '/' + negociacao.data.getFullYear()
+
+        console.log(diaMesAno);
+
     }
 }
+
