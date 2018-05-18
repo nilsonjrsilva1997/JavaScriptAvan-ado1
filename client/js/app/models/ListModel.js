@@ -10,4 +10,8 @@ class ListModel {
     get negociacoes() {
         return this._negociacoes;
     }
+
+    _limpaForm() { 
+        this._input
+    }
 }
